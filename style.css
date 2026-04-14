@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(135deg, #fde2e8, #ffffff);
+    background-attachment: fixed; 
+    color: #444;
+}
+
+nav, .top-nav {
+    position: sticky;
+    top: 0;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 30px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    z-index: 100;
+    border-bottom: 2px solid #f8bbd0;
+}
+
+nav a, .nav-links a, .nav-title {
+    text-decoration: none;
+    padding: 8px 15px;
+    color: #d96c8f;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+nav a:hover, .nav-links a:hover {
+    background: #f48fb1;
+    color: white;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 18px;
+    padding: 40px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+    animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.3rem;
+    color: #d81b60;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    color: #e07a9b;
+    font-size: 1.4rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-align: left; 
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 0.95rem;
+    color: #888;
+    margin-bottom: 25px;
+}
+
+p {
+    line-height: 1.8;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.img-box {
+    text-align: center;
+    margin: 25px 0;
+}
+
+.profile-img {
+    display: block;
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 4px solid #f8bbd0;
+    object-fit: cover;
+}
+
+.hobby-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    margin: 10px;
+    border: 3px solid #f48fb1;
+    object-fit: cover;
+}
+
+/* --- LISTS --- */
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+
+footer {
+    margin-top: 60px;
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #888;
+    background: #f8bbd0;
+    color: white;
+}
+
+footer span {
+    font-weight: 600;
+}
+
+
+@media (max-width: 600px) {
+    .container {
+        margin: 20px;
+        padding: 25px;
+    }
+    
+    .hobby-img {
+        width: 100%;
+        max-width: 250px;
+    }
+}
